@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #28a745;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #4caf50, #388e3c);
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    
+}
+
+.hero button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* Auth Forms */
+.auth-form {
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form .form-floating {
+    margin-bottom: 15px;
+}
+
+/* Notification */
+#notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    width: 80%;
+    max-width: 400px;
+}
+
+#notification.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+#notification.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+/* Dashboard */
+.dashboard .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.dashboard .card-text {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    .auth-form {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #notification {
+        width: 90%;
+    }
+}
